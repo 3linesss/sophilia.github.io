@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sophilia</title>
+  <title>Sophilia LinkedIn</title>
   <style>
     * {
       margin: 0;
@@ -26,17 +26,12 @@
       text-decoration: none;
     }
 
+    /* Automatically scales with viewport:
+       min 28px, ideal 6vw, max 44px */
     .linkedin-icon {
-      width: 40px;   /* cute smol size */
-      height: 40px;
+      width: clamp(28px, 6vw, 44px);
+      height: clamp(28px, 6vw, 44px);
       fill: #ffffff; /* white logo */
-    }
-
-    @media (min-width: 768px) {
-      .linkedin-icon {
-        width: 48px;
-        height: 48px;
-      }
     }
   </style>
 </head>
