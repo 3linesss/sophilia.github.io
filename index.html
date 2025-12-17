@@ -2,87 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sophilia Button</title>
+  <title>Sophilia LinkedIn</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       height: 100vh;
+      width: 100vw;
+      background: #000000; /* black screen */
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #000000; /* pure black */
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        system-ui, sans-serif;
     }
 
-    a.button {
+    a.logo-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 14px 44px;
-      border-radius: 18px;
-      border: 2px solid #ffffff;
       text-decoration: none;
-      background: #000000;
-      cursor: pointer;
-      transition: background 0.2s ease, box-shadow 0.2s ease,
-        transform 0.1s ease;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-    }
-
-    a.button:hover {
-      background: #111111;
-      box-shadow: 0 0 16px rgba(255, 255, 255, 0.18);
-      transform: translateY(-1px);
-    }
-
-    a.button:active {
-      transform: translateY(1px);
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.12);
-    }
-
-    .label {
-      font-size: 24px;
-      font-weight: 500;
-      color: #ffffff;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .label span.blue {
-      color: #0a66c2; /* LinkedIn blue */
     }
 
     .linkedin-icon {
-      width: 20px;
-      height: 20px;
-      fill: #0a66c2;
+      width: 72px;
+      height: 72px;
+      fill: #ffffff; /* white logo */
     }
   </style>
 </head>
 <body>
   <a
-    class="button"
+    class="logo-link"
     href="https://www.linkedin.com/company/sophilia/"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Visit Sophilia on LinkedIn"
   >
-    <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <!-- Simple LinkedIn "in" icon in white -->
+    <svg
+      class="linkedin-icon"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <rect width="24" height="24" rx="4" ry="4"></rect>
       <path
-        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-      />
+        d="M6.5 6.5C6.5 7.6 5.6 8.5 4.5 8.5C3.4 8.5 2.5 7.6 2.5 6.5C2.5 5.4 3.4 4.5 4.5 4.5C5.6 4.5 6.5 5.4 6.5 6.5ZM6.3 9.8H2.7V19.5H6.3V9.8ZM12.7 9.8H9.2V19.5H12.7V14.3C12.7 11.9 15.8 11.7 15.8 14.3V19.5H19.3V13.5C19.3 9.4 14.6 9.6 12.7 11.6V9.8Z"
+        fill="#000000"
+      ></path>
     </svg>
-
-    <div class="label">
-      <span>Sophilia</span>
-      <span class="blue">LinkedIn</span>
-    </div>
   </a>
 </body>
 </html>
