@@ -27,9 +27,16 @@
     }
 
     .linkedin-icon {
-      width: 72px;
-      height: 72px;
+      width: 40px;   /* cute smol size */
+      height: 40px;
       fill: #ffffff; /* white logo */
+    }
+
+    @media (min-width: 768px) {
+      .linkedin-icon {
+        width: 48px;
+        height: 48px;
+      }
     }
   </style>
 </head>
@@ -41,7 +48,6 @@
     rel="noopener noreferrer"
     aria-label="Visit Sophilia on LinkedIn"
   >
-    <!-- Simple LinkedIn "in" icon in white -->
     <svg
       class="linkedin-icon"
       viewBox="0 0 24 24"
